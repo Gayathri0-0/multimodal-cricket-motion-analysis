@@ -125,8 +125,10 @@ This project is for educational purposes.
 ## 👤 Author
 
 **Chinmay Dadhich**
-GitHub: https://github.com/
+GitHub: https://github.com/chinmaydadh1022-boop
 
+**Nikhil Jhangir**
+GitHub: https://github.com/
 ---
 
 > ⭐ If you found this project useful, consider giving it a star!
