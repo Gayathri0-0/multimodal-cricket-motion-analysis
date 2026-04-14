@@ -1,5 +1,5 @@
 🏏 Multimodal Cricket Motion Analysis
-> AI-powered cricket motion analysis using computer vision and pose estimation to evaluate player performance and biomechanics.
+->AI-powered cricket motion analysis using computer vision and pose estimation to evaluate player performance and biomechanics.
 
 📌 Problem Statement
 Analyzing cricket techniques such as batting and bowling traditionally relies heavily on manual observation, which can be subjective, time-consuming, and prone to human error. There is a need for an automated system that can objectively evaluate player movements and provide actionable insights.
@@ -57,7 +57,6 @@ multimodal-cricket-motion-analysis/
 * ⚡ Real-time feedback systems (future scope)
 
 🚀 Future Improvements
-
 * 🔍 Shot classification (cover drive, pull shot, etc.)
 * 🎥 Real-time webcam-based motion analysis
 * 🌐 Web-based dashboard for visualization
@@ -75,10 +74,9 @@ This project is for educational purposes.
 * OpenCV for video processing
 
 👤 Author
-
 Chinmay Dadhich
+GitHub: https://github.com/chinmaydadh1022-boop
+Nikhil Jhangir 
 GitHub: https://github.com/
 
----
-
-> ⭐ If you found this project useful, consider giving it a star!
+⭐ If you found this project useful, consider giving it a star!
