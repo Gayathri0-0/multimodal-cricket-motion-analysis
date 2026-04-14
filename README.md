@@ -1,13 +1,17 @@
 🏏 Multimodal Cricket Motion Analysis
+
 ->AI-powered cricket motion analysis using computer vision and pose estimation to evaluate player performance and biomechanics.
 
 📌 Problem Statement
+
 Analyzing cricket techniques such as batting and bowling traditionally relies heavily on manual observation, which can be subjective, time-consuming, and prone to human error. There is a need for an automated system that can objectively evaluate player movements and provide actionable insights.
 
 💡 Solution
+
 This project leverages computer vision and machine learning techniques to analyze cricket player movements from video input. By extracting body keypoints using pose estimation, the system quantifies motion patterns and provides a data-driven understanding of player performance.
 
 ✨ Features
+
 * 🎯 Human pose estimation from cricket videos
 * 🦴 Extraction of key body landmarks (joints & limbs)
 * 📊 Motion tracking and biomechanical analysis
@@ -16,6 +20,7 @@ This project leverages computer vision and machine learning techniques to analyz
 * 📈 Data-driven insights for performance improvement
   
 🛠 Tech Stack
+
 * Language: Python
 * Libraries & Tools:
   * OpenCV
@@ -24,6 +29,7 @@ This project leverages computer vision and machine learning techniques to analyz
   * Pandas
 
 ⚙️ Installation
+
 git clone https://github.com/Gayathri0-0/multimodal-cricket-motion-analysis.git
 cd multimodal-cricket-motion-analysis
 pip install -r requirements.txt
@@ -44,6 +50,7 @@ multimodal-cricket-motion-analysis/
 └── README.md
 
 📸 Output / Demo
+
 * Skeleton-based pose visualization
 * Motion tracking across frames
 * Keypoint-based analysis of player movements
@@ -51,12 +58,14 @@ multimodal-cricket-motion-analysis/
 *(Add screenshots or GIFs here for better presentation)*
 
 🎯 Applications
+
 * 🏏 Cricket coaching and performance analysis
 * 📊 Sports analytics research
 * 🧠 Biomechanics study
 * ⚡ Real-time feedback systems (future scope)
 
 🚀 Future Improvements
+
 * 🔍 Shot classification (cover drive, pull shot, etc.)
 * 🎥 Real-time webcam-based motion analysis
 * 🌐 Web-based dashboard for visualization
@@ -64,16 +73,20 @@ multimodal-cricket-motion-analysis/
 * 📱 Mobile-friendly interface
 
 🤝 Contributing
+
 Contributions are welcome! Feel free to fork this repository and submit a pull request.
 
 📜 License
+
 This project is for educational purposes.
 
 ⭐ Acknowledgements
+
 * MediaPipe for pose estimation
 * OpenCV for video processing
 
 👤 Author
+
 Chinmay Dadhich
 GitHub: https://github.com/chinmaydadh1022-boop
 Nikhil Jhangir 
