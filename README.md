@@ -40,13 +40,21 @@ python main.py
 > ⚠️ Make sure to update the input video path in the script before running.
 
 📂 Project Structure
+
 multimodal-cricket-motion-analysis/
+
 │
+
 ├── data/              # Input videos / datasets
+
 ├── output/            # Processed outputs / visualizations
+
 ├── src/               # Core logic and processing scripts
+
 ├── main.py            # Entry point of the project
+
 ├── requirements.txt   # Dependencies
+
 └── README.md
 
 📸 Output / Demo
@@ -89,6 +97,7 @@ This project is for educational purposes.
 
 Chinmay Dadhich
 GitHub: https://github.com/chinmaydadh1022-boop
+
 Nikhil Jhangir 
 GitHub: https://github.com/
 
