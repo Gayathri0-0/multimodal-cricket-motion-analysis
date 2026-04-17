@@ -99,10 +99,6 @@ E --> F[Feedback Output]
   <img src="assets/output_graph.png" width="500"/>
 </p>
 
-### 🎥 Pose Visualization
-
-[▶️ Click to watch pose estimation output](assets/pose_output.mp4)
-
 ---
 
 ## 📦 Requirements
