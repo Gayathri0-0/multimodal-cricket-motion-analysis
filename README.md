@@ -178,11 +178,11 @@ multimodal-cricket-motion-analysis/
 
 ## 👩‍💻 Team & Contributions
 
-- **Chinmay Dadhich** ([GitHub](https://github.com/)) – 
+- **Chinmay Dadhich** ([GitHub](https://github.com/chinmaydadh1022-boop)) – 
 - **Nikhil Jangir** ([GitHub](https://github.com/username)) – 
-- **Madhvi Gupta** ([GitHub](https://github.com/username))   – Literature survey and research 
-- **Gayathri** ([GitHub](https://github.com/username)) - Github Repository
-- **Parag Kabara** ([GitHub](https://github.com/username))  – Presentation and Report
+- **Madhvi Gupta** ([GitHub](https://github.com/Madhvi-311))   – Literature survey and research 
+- **Gayathri** ([GitHub](https://github.com/Gayathri0-0)) - Github Repository
+- **Parag Kabara** ([GitHub](https://github.com/Arena17-Parag))  – Presentation and Report
 
 ---
 
