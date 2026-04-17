@@ -1,45 +1,73 @@
 import pandas as pd
-from sklearn.tree import DecisionTreeClassifier
+import joblib
 
-# ==============================
-# 🔥 STEP 1: TRAIN MODEL (same dummy data)
-# ==============================
+# =========================
+# 🔹 LOAD MODEL
+# =========================
 
-data = {
-    "head_stability": [0.01, 0.02, 0.015, 0.05, 0.06, 0.04, 0.03, 0.07, 0.025, 0.035],
-    "alignment":      [0.01, 0.015, 0.02, 0.05, 0.045, 0.04, 0.03, 0.06, 0.02, 0.035],
-    "momentum":       [0.035, 0.03, 0.04, 0.015, 0.01, 0.02, 0.025, 0.012, 0.03, 0.02],
-    "leg_bracing":    [15, 12, 18, 5, 3, 8, 10, 4, 14, 9],
-    "performance":    [2, 2, 2, 0, 0, 1, 1, 0, 2, 1]
-}
+model = joblib.load("model.pkl")
+scaler = joblib.load("scaler.pkl")
 
-df = pd.DataFrame(data)
+print("Model loaded successfully!")
 
-X = df[["head_stability", "alignment", "momentum", "leg_bracing"]]
-y = df["performance"]
+# =========================
+# 🔹 LOAD CSV DATA
+# =========================
 
-model = DecisionTreeClassifier()
-model.fit(X, y)
+df = pd.read_csv("bowling_data.csv")
 
-print("Model trained.")
+# =========================
+# 🔹 TRANSFORM FEATURES (IMPORTANT)
+# =========================
 
-# ==============================
-# 🔥 STEP 2: LOAD REAL CSV
-# ==============================
+df["head_stability"] = 1 - df["head_stability"]
+df["alignment"] = 1 - df["alignment"]
+df["leg_bracing"] = 1 - (df["leg_bracing"] / 20)
 
-real_data = pd.read_csv("bowling_data.csv")
+# Make sure columns match
+X = df[["momentum", "head_stability", "leg_bracing", "alignment"]]
 
-print("\n=== REAL DATA ===")
-print(real_data)
+# =========================
+# 🔹 SCALE DATA
+# =========================
 
-# ==============================
-# 🔥 STEP 3: PREDICT
-# ==============================
+X_scaled = scaler.transform(X)
 
-prediction = model.predict(real_data)
+# =========================
+# 🔹 PREDICTION
+# =========================
 
-labels = ["Poor", "Average", "Good"]
+predictions = model.predict(X_scaled)
 
-print("\n=== FINAL RESULT ===")
-for i, pred in enumerate(prediction):
-    print(f"Delivery {i+1}: {labels[pred]}")
+# =========================
+# 🔹 MAP OUTPUT LABELS
+# =========================
+
+def label_map(x):
+    if x == 0:
+        return "Poor"
+    elif x == 1:
+        return "Average"
+    else:
+        return "Good"
+
+df["Predicted_Performance"] = [label_map(p) for p in predictions]
+
+# =========================
+# 🔹 WEIGHTED SCORE (OPTIONAL)
+# =========================
+
+df["Weighted_Score"] = (
+    0.4 * df["momentum"] +
+    0.3 * (1 - df["head_stability"]) +  
+    0.2 * (df["leg_bracing"] / 20) +
+    0.1 * (1 - df["alignment"])
+)
+
+# =========================
+# 🔹 OUTPUT
+# =========================
+
+print("\nPredictions:\n")
+print(df[["momentum", "head_stability", "leg_bracing", "alignment",
+          "Weighted_Score", "Predicted_Performance"]])
