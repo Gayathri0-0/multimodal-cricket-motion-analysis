@@ -182,7 +182,7 @@ multimodal-cricket-motion-analysis/
 - **Nikhil Jangir** ([GitHub](https://github.com/username)) – 
 - **Madhvi Gupta** ([GitHub](https://github.com/Madhvi-311))   – Literature survey and research 
 - **Gayathri** ([GitHub](https://github.com/Gayathri0-0)) - Github Repository
-- **Parag Kabara** ([GitHub](https://github.com/Arena17-Parag))  – Presentation and Report
+- **Parag Kabara** ([GitHub](https://github.com/Arena17-Parag))  – Presentation and Report Making
 
 ---
 
