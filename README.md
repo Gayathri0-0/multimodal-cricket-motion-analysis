@@ -17,14 +17,19 @@
 ## 📌 Overview
 
 Analyzing cricket bowling techniques manually is subjective and time-consuming.
-This project provides an automated system that evaluates bowling actions using **pose-based motion data** and machine learning.
+This project provides an automated system that evaluates bowling actions using **pose-based motion data and machine learning**, enabling objective and consistent analysis.
 
 ---
 
 ## 💡 Solution Approach
 
-The system uses pre-extracted body keypoints to represent a bowler’s motion.
-These keypoints are transformed into structured features and fed into a machine learning model to classify and detect errors in the bowling action.
+The system uses **pre-extracted body keypoints** (e.g., from MediaPipe) to represent a bowler’s motion.
+
+These keypoints:
+
+* Represent body joint positions
+* Are converted into structured numerical features
+* Are used in a **Logistic Regression model** for classification and error detection
 
 ---
 
@@ -90,13 +95,17 @@ E --> F[Feedback Output]
 ### 📥 Input Data
 
 <p align="center">
-  <img src="assets/input_data.png" width="500"/>
+  <img src="assets/input_1.png.jpeg" width="500"/>
 </p>
 
-### 📊 Model Output
+---
+
+### 📊 Model Outputs
 
 <p align="center">
-  <img src="assets/output_graph.png" width="500"/>
+  <img src="assets/output_1.png.jpeg" width="450"/>
+  <img src="assets/output_2.png.jpeg" width="450"/>
+  <img src="assets/output_3.png.jpeg" width="450"/>
 </p>
 
 ---
@@ -124,9 +133,22 @@ pip install -r requirements.txt
 
 ## ▶️ Usage
 
+1. **Prepare Input Data**
+
+   * Ensure pre-extracted pose keypoint data (dataset) is available
+   * Place the dataset inside the `data/` folder
+
+2. **Run the Program**
+
 ```bash
 python main.py
 ```
+
+3. **Output**
+
+   * The model processes the input features
+   * Classifies bowling actions
+   * Detects errors and provides feedback
 
 ---
 
@@ -137,6 +159,7 @@ multimodal-cricket-motion-analysis/
 ├── data/              # Dataset and keypoints  
 ├── models/            # Trained models  
 ├── src/               # Source code  
+├── assets/            # Input & output images  
 ├── main.py            # Entry point  
 ├── requirements.txt  
 └── README.md  
@@ -174,11 +197,11 @@ multimodal-cricket-motion-analysis/
 
 ## 👩‍💻 Team & Contributions
 
-- **Chinmay Dadhich** ([GitHub](https://github.com/chinmaydadh1022-boop)) – 
-- **Nikhil Jangir** ([GitHub](https://github.com/username)) – 
-- **Madhvi Gupta** ([GitHub](https://github.com/Madhvi-311))   – Literature survey and research 
-- **Gayathri** ([GitHub](https://github.com/Gayathri0-0)) - Github Repository
-- **Parag Kabara** ([GitHub](https://github.com/Arena17-Parag))  – Presentation and Report Making
+* **Chinmay Dadhich** – Coding
+* **Nikhil Jangir** – Coding
+* **Madhvi Gupta** – Literature survey and research
+* **Gayathri** – GitHub repository management
+* **Parag Kabara** – Presentation and documentation
 
 ---
 
