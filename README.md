@@ -95,7 +95,7 @@ E --> F[Feedback Output]
 ### 📥 Input Data
 
 <p align="center">
-  <img src="assets/input_1.png.jpeg" width="500"/>
+  <img src="input_1.png.jpeg" width="500"/>
 </p>
 
 ---
@@ -103,9 +103,9 @@ E --> F[Feedback Output]
 ### 📊 Model Outputs
 
 <p align="center">
-  <img src="assets/output_1.png.jpeg" width="450"/>
-  <img src="assets/output_2.png.jpeg" width="450"/>
-  <img src="assets/output_3.png.jpeg" width="450"/>
+  <img src="output_1.png.jpeg" width="450"/>
+  <img src="output_2.png.jpeg" width="450"/>
+  <img src="output_3.png.jpeg" width="450"/>
 </p>
 
 ---
