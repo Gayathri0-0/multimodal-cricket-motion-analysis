@@ -156,18 +156,20 @@ python main.py
 
 ```
 multimodal-cricket-motion-analysis/
-├── data/                  # Dataset and keypoints  
+├── data/                  # Dataset and pose keypoints  
 ├── assets/                # Input & output images  
 ├── main.py                # Main execution script  
-├── pose_detection.py      # Extracts pose keypoints  
-├── data_extraction.py     # Processes raw data  
-├── train_model.py         # Trains ML model  
-├── integrated_from_csv.py # Uses dataset for predictions  
-├── metrics.py             # Evaluation metrics  
-├── plot_momentum.py       # Visualization/analysis  
-├── requirements.txt  
+├── pose_detection.py      # Extracts pose keypoints from video  
+├── data_extraction.py     # Converts keypoints into structured features  
+├── train_model.py         # Trains Logistic Regression model  
+├── integrated_from_csv.py # Runs predictions using dataset  
+├── data_logger.py         # Logs and stores processed data  
+├── metrics.py             # Evaluates model performance  
+├── plot_momentum.py       # Generates analysis/visual plots  
+├── requirements.txt       # Project dependencies  
 └── README.md  
 ```
+
 
 
 ---
