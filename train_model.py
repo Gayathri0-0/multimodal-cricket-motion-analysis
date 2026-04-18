@@ -1,8 +1,9 @@
 import pandas as pd
 import joblib
 
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression  #import logistic regretion model and used for classification
+from sklearn.preprocessing import StandardScaler #used to normalise the data
+
 
 # =========================
 # 🔹 DUMMY DATASET
