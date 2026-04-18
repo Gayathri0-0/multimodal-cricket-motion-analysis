@@ -74,7 +74,7 @@ def compute_leg_angle(hip, knee, ankle):
 
 
 # -----------------------------
-# 🔥 PSEUDO RELEASE FEATURES
+# PSEUDO RELEASE FEATURES
 # -----------------------------
 def compute_release_features(alignment_history):
     if len(speeds) < 5 or len(knee_angles) < 5:
