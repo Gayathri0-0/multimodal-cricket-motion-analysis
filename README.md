@@ -1,4 +1,4 @@
-# 🏏 Multimodal Cricket Motion Analysis
+#  Multimodal Cricket Motion Analysis
 
 <p align="center">
   <b>AI-powered analysis of cricket bowling actions using pose-based features and machine learning</b>
@@ -14,14 +14,14 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Analyzing cricket bowling techniques manually is subjective and time-consuming.
 This project provides an automated system that evaluates bowling actions using **pose-based motion data and machine learning**, enabling objective and consistent analysis.
 
 ---
 
-## 💡 Solution Approach
+##  Solution Approach
 
 The system uses **pre-extracted body keypoints** (e.g., from MediaPipe) to represent a bowler’s motion.
 
@@ -33,7 +33,7 @@ These keypoints:
 
 ---
 
-## 🎯 Features
+##  Features
 
 * Pose-based motion analysis
 * Feature extraction from body keypoints
@@ -49,7 +49,7 @@ The system takes pose keypoint data as input, converts it into structured featur
 
 ---
 
-## 🔄 Workflow
+##  Workflow
 
 ```mermaid
 graph TD
@@ -62,7 +62,7 @@ E --> F[Feedback Output]
 
 ---
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 | Category         | Technology Used |
 | ---------------- | --------------- |
@@ -74,7 +74,7 @@ E --> F[Feedback Output]
 
 ---
 
-## 📥 Input
+##  Input
 
 * Pre-extracted pose keypoints (e.g., MediaPipe output)
 * Numerical feature vectors representing motion
@@ -82,7 +82,7 @@ E --> F[Feedback Output]
 
 ---
 
-## 📤 Output
+##  Output
 
 * Classification of bowling action
 * Detection of errors
@@ -90,9 +90,9 @@ E --> F[Feedback Output]
 
 ---
 
-## 🖼️ Results
+##  Results
 
-### 📥 Input Data
+###  Input Data
 
 <p align="center">
   <img src="input_1.png.jpeg" width="500"/>
@@ -100,7 +100,7 @@ E --> F[Feedback Output]
 
 ---
 
-### 📊 Model Outputs
+###  Model Outputs
 
 <p align="center">
   <img src="output_1.png.jpeg" width="450"/>
@@ -110,7 +110,7 @@ E --> F[Feedback Output]
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 * Python 3.x
 * OpenCV
@@ -121,7 +121,7 @@ E --> F[Feedback Output]
 
 ---
 
-## 🛠️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/Gayathri0-0/multimodal-cricket-motion-analysis.git
@@ -131,7 +131,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 1. **Prepare Input Data**
 
@@ -152,7 +152,7 @@ python main.py
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 multimodal-cricket-motion-analysis/
@@ -174,7 +174,7 @@ multimodal-cricket-motion-analysis/
 
 ---
 
-## 🌍 Applications
+##  Applications
 
 * Cricket coaching and training
 * Player performance analysis
@@ -183,7 +183,7 @@ multimodal-cricket-motion-analysis/
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 * Depends on accuracy of pose keypoint data
 * Limited dataset may affect generalization
@@ -192,7 +192,7 @@ multimodal-cricket-motion-analysis/
 
 ---
 
-## 🚀 Future Scope
+##  Future Scope
 
 * Integration of deep learning models (CNN / LSTM)
 * Real-time analysis system
@@ -202,7 +202,7 @@ multimodal-cricket-motion-analysis/
 
 ---
 
-## 👩‍💻 Team & Contributions
+##  Team & Contributions
 
 * **Chinmay Dadhich** – Coding
 * **Nikhil Jangir** – Coding
@@ -212,12 +212,12 @@ multimodal-cricket-motion-analysis/
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
 ---
 
-## ⭐ Show Your Support
+##  Show Your Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub!
