@@ -43,7 +43,7 @@ These keypoints:
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 The system takes pose keypoint data as input, converts it into structured features, and uses a trained Logistic Regression model to classify bowling actions and detect errors.
 
