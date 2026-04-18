@@ -12,7 +12,7 @@ from metrics import (
 )
 from data_logger import log_data, save_data, clear_data
 
-# 🔥 Start fresh every run
+#  Start fresh every run
 clear_data()
 
 cap = cv2.VideoCapture(0)
@@ -109,7 +109,7 @@ while True:
         break
 
 # ==============================
-# 🔥 AFTER RECORDING (FINAL FEATURES)
+#  AFTER RECORDING (FINAL FEATURES)
 # ==============================
 
 align_release, momentum_peak, leg_bracing = compute_release_features(alignment_history)
