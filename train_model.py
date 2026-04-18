@@ -130,10 +130,10 @@ test_cases = [
     {
         "name": "Good Delivery",
         "data": {
-            "momentum": 0.05,          # high ✅
-            "head_stability": 0.02,    # low movement ✅
-            "leg_bracing": 4,          # LOW angle change ✅
-            "alignment": 0.02          # low misalignment ✅
+            "momentum": 0.05,          # high 
+            "head_stability": 0.02,    # low movement 
+            "leg_bracing": 4,          # LOW angle change 
+            "alignment": 0.02          # low misalignment 
         }
     },
     {
@@ -148,10 +148,10 @@ test_cases = [
     {
         "name": "Poor Delivery",
         "data": {
-            "momentum": 0.008,         # low ❌
-            "head_stability": 0.055,   # high movement ❌
-            "leg_bracing": 16,         # HIGH collapse ❌
-            "alignment": 0.05          # high misalignment ❌
+            "momentum": 0.008,         # low 
+            "head_stability": 0.055,   # high movement 
+            "leg_bracing": 16,         # HIGH collapse 
+            "alignment": 0.05          # high misalignment 
         }
     }
 ]
